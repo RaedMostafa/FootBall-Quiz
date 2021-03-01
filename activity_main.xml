@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Welcome to our football quiz" />
+        <TextView
+            android:id="@+id/please_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Choose the correct answer (Y,N)" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1- Messi is a player at Barcelona?" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/firstAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Yes" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2- Which team has 12 champions league?" />
+        <EditText
+            android:id="@+id/secondAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Real Madrid " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3- Is Salah a player at Liverpool?" />
+        <EditText
+            android:id="@+id/thirdAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yes or No" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="4- Which national team won the last world cup?" />
+        <EditText
+            android:id="@+id/fourthAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="France " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="5- which player of these is Brazilian?" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/fifthAnswer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nyemar" />
+            <CheckBox
+                android:id="@+id/fifthAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ronaldinho" />
+            <CheckBox
+                android:id="@+id/fifthAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messi" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="submit"
+            android:text="Submit Answers" />
+        <TextView
+            android:id="@+id/Final_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
